@@ -1,0 +1,20 @@
+# Ignore system files
+*.log
+*.tmp
+*.swp
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Bash scripts and runtime
+/opt/wazuh-project/*.pid
+
+# Node
+node_modules/
+
+# Mac/Editor
+.DS_Store
+.vscode/
