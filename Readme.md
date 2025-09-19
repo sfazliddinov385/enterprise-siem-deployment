@@ -211,3 +211,103 @@ echo "Done - Check for system alerts"
 echo "[Test 4] Generating Security Events..."
 logger -p auth.err "Failed authentication"
 logger -p auth
+
+
+
+
+
+
+### How to Run This Project!
+  
+### Requirements!
+- VirtualBox installed  
+- Ubuntu Server VM (for Wazuh manager)  
+- Windows 10 VM (for agent)  
+- Both VMs on the same **NAT Network**  
+- At least **4GB RAM** for Ubuntu, **2GB** for Windows  
+
+### Setup Instructions!
+1) **Install Wazuh on Ubuntu:**
+```bash
+curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh
+sudo bash wazuh-install.sh -a
+Configure Network:
+
+Set both VMs to NAT Network in VirtualBox settings.
+
+Install Windows Agent:
+
+Download the agent from the Wazuh dashboard and install on Windows 10.
+
+Run Monitoring:
+
+bash
+Copy code
+sudo /opt/wazuh-project/monitor.sh
+Generate Test Events:
+
+bash
+Copy code
+sudo /opt/wazuh-project/demo.sh
+Create Report:
+
+bash
+Copy code
+sudo /opt/wazuh-project/generate-report.sh
+Results and Findings!
+What I Achieved!
+Successfully deployed enterprise SIEM system
+
+Captured 6,155 security events
+
+Detected 910 medium severity threats
+
+Monitored both Linux and Windows systems
+
+Created automated monitoring tools
+
+Built professional reporting system
+
+Security Capabilities Implemented!
+File Integrity Monitoring (755 file changes detected)
+
+Authentication tracking (67 successful logins)
+
+Malware detection (18 indicators found)
+
+Real-time threat alerting
+
+Compliance monitoring (PCI DSS, GDPR, HIPAA)
+
+Automated incident response
+
+What I Learned!
+How to deploy enterprise security monitoring systems
+
+The importance of centralized log management
+
+How to write automation scripts for security operations
+
+How to analyze security events and identify threats
+
+The value of real-time monitoring for incident response
+
+How to create professional security reports
+
+Skills Demonstrated!
+SIEM deployment and configuration
+
+Cross-platform system administration (Linux and Windows)
+
+Bash scripting and automation
+
+Security event analysis
+
+Network configuration and troubleshooting
+
+Security reporting
+
+Contact!
+Feel free to reach out if you have questions about this project or want to discuss cybersecurity!
+
+Copy code
