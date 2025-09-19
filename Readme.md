@@ -15,8 +15,16 @@ I built this security monitoring lab to learn how organizations detect and respo
 ---
 
 ## Project Screenshots
+### Step 1: Network Configuration
+Both virtual machines configured on the same network for communication.
 
-### Step 1: Installing the SIEM Platform
+![Ubuntu Network](screenshots/Capture12.PNG)  
+*Ubuntu server network settings — using NAT Network at `10.0.2.15`*
+
+![Windows Network](screenshots/Capture13.PNG)  
+*Windows 10 network settings — on same NAT Network at `10.0.2.4`*
+
+### Step 2: Installing the SIEM Platform
 I started by installing Wazuh on Ubuntu Server with all its components.
 
 ![Wazuh Installation Start](screenshots/Capture1.PNG)  
@@ -25,7 +33,7 @@ I started by installing Wazuh on Ubuntu Server with all its components.
 ![Installation Progress](screenshots/Capture4.PNG)  
 *Wazuh components being configured — manager, indexer, and dashboard services starting up*
 
-### Step 2: Accessing the Security Dashboard
+### Step 3: Accessing the Security Dashboard
 After installation, I accessed the web dashboard to monitor security events.
 
 ![Initial Dashboard](screenshots/Capture2.PNG)  
@@ -34,19 +42,19 @@ After installation, I accessed the web dashboard to monitor security events.
 ![Documentation Review](screenshots/Capture3.PNG)  
 *Reviewing the Windows agent installation guide in the Wazuh documentation*
 
-### Step 3: System Growth and Monitoring
+### Step 4: System Growth and Monitoring
 As the system ran, it started capturing more security events from both machines.
 
 ![Growing Alerts](screenshots/Capture5.PNG)  
 *Dashboard after some time — now showing 283 medium and 200 low severity alerts*
 
-### Step 4: Windows Agent Deployment
+### Step 5: Windows Agent Deployment
 I installed the Wazuh agent on Windows 10 to monitor that system too.
 
 ![Agent Management](screenshots/Capture6.PNG)  
 *Agents page showing Windows 10 machine (DESKTOP-5UQDUQF) connected and active*
 
-### Step 5: Creating Automation Scripts
+### Step 6: Creating Automation Scripts
 I built several bash scripts to automate monitoring and testing.
 
 ![Script Directory](screenshots/Capture7.PNG)  
@@ -55,7 +63,7 @@ I built several bash scripts to automate monitoring and testing.
 ![Script List](screenshots/Capture8.PNG)  
 *Detailed view of all automation scripts I created for this project*
 
-### Step 6: Running Security Tests
+### Step 7: Running Security Tests
 I created a demo script that simulates various security events to test detection.
 
 ![Demo Running](screenshots/Capture9.PNG)  
@@ -64,26 +72,17 @@ I created a demo script that simulates various security events to test detection
 ![Demo Complete](screenshots/Capture10.PNG)  
 *Demo script completed — shows what security events were generated*
 
-### Step 7: Simulating Critical Threats
+### Step 8: Simulating Critical Threats
 I wrote a script to generate critical security alerts like ransomware and system compromise.
 
 ![Critical Alerts](screenshots/Capture11.PNG)  
 *Running `critical-alerts.sh` script — simulating ransomware and backdoor installation*
 
-### Step 8: Final Dashboard Status
+### Step 9: Final Dashboard Status
 After all testing, the dashboard showed comprehensive security monitoring.
 
 ![Final Dashboard](screenshots/Capture9.PNG)  
 *Final dashboard showing 6,155 total alerts captured (910 medium, 5,245 low severity)*
-
-### Step 9: Network Configuration
-Both virtual machines configured on the same network for communication.
-
-![Ubuntu Network](screenshots/Capture12.PNG)  
-*Ubuntu server network settings — using NAT Network at `10.0.2.15`*
-
-![Windows Network](screenshots/Capture13.PNG)  
-*Windows 10 network settings — on same NAT Network at `10.0.2.4`*
 
 ---
 
